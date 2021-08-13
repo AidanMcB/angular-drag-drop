@@ -1,0 +1,25 @@
+.list-container{
+    display: flex;
+    justify-content:  space-evenly;
+}
+.box-1{
+    background-color: tan;
+    height: 300px;
+    padding: 20px;
+    width: 200px;
+}
+.box-2{
+    background-color: gray;
+    height: 300px;
+    padding: 20px;
+    width: 200px;
+}
+.list-a-item{
+    background-color: whitesmoke;
+    width: 50%;
+}
+
+.list-b-item{
+    background-color: salmon;
+    width: 50%;
+}

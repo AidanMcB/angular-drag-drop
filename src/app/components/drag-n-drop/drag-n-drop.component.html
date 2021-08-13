@@ -1,0 +1,28 @@
+<!-- This is valid -->
+<!-- <div cdkDropList #listOne="cdkDropList" [cdkDropListConnectedTo]="[listTwo]"></div>
+<div cdkDropList #listTwo="cdkDropList" [cdkDropListConnectedTo]="[listOne]"></div> -->
+
+<!-- This is valid as well -->
+<!-- <div cdkDropList id="list-one" [cdkDropListConnectedTo]="['list-two']"></div>
+<div cdkDropList id="list-two" [cdkDropListConnectedTo]="['list-one']"></div> -->
+
+
+<div class="box" cdkDrag>Draggable Box</div>
+
+<div cdkDragHandle cdkDropListGroup class="list-container">
+    <div cdkDropList class="box-1"
+        [cdkDropListData]="listA"
+        (cdkDropListDropped)="dropItem($event)">
+        <div cdkDrag *ngFor="let item of listA">
+            <p class="list-a-item">{{item}}</p>
+        </div>
+    </div>
+
+    <div cdkDropList class="box-2"
+        [cdkDropListData]="listB"
+        (cdkDropListDropped)="dropItem($event)">
+        <div cdkDrag *ngFor="let item of listB">
+            <p class="list-b-item">{{item}}</p>
+        </div>
+    </div>
+</div>
