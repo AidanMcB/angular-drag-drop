@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EffectsModule } from '@ngrx/effects';
 
 @Component({
   selector: 'app-root',
